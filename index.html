@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trader Type Questionnaire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="questionnaire">
+  <form id="traderForm">
+    <!-- Question 1 -->
+    <div class="question">
+      <p>1. كم مرة تجد نفسك تقوم بالتداول استنادًا إلى حركات السوق المفاجئة دون استشارة خطتك التجارية؟</p>
+      <select name="q1">
+        <option value="3">غالبًا</option>
+        <option value="2">أحيانًا</option>
+        <option value="1">نادرًا</option>
+        <option value="0">أبدًا</option>
+      </select>
+    </div>
+     <!-- Question 2 -->
+     <div class="question">
+        <p>2. عند مواجهة تداول محتمل، هل تتردد في الدخول بسبب الخوف من خسارة المال؟</p>
+        <select name="q2">
+          <option value="3">دائمًا</option>
+          <option value="2">غالبًا</option>
+          <option value="1">أحيانًا</option>
+          <option value="0">أبدًا</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>3. بعد عدة تداولات ناجحة، هل أنت أكثر عرضة لزيادة حجم تداولك بشكل كبير؟</p>
+        <select name="q3">
+          <option value="3">دائمًا</option>
+          <option value="2">غالبًا</option>
+          <option value="1">أحيانًا</option>
+          <option value="0">أبدًا</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>4. هل تجد صعوبة في اتخاذ قرار التداول، غالبًا ما تسعى للحصول على المزيد والمزيد من المعلومات قبل العمل؟</p>
+        <select name="q4">
+          <option value="3">دائمًا</option>
+          <option value="2">غالبًا</option>
+          <option value="1">أحيانًا</option>
+          <option value="0">أبدًا</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>بعد تداول خاسر، ما مدى احتمالية أن تدخل فورًا في تداول آخر لمحاولة استرداد خسارتك؟</p>
+        <select name="q5">
+          <option value="3">من المحتمل جدًا</option>
+          <option value="2">من المحتمل إلى حد ما</option>
+          <option value="1">غير محتمل</option>
+          <option value="0">أبدًا</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>هل تعتقد أنك تستطيع تحديد أنماط السوق بشكل أفضل من معظم المتداولين؟</p>
+        <select name="q6">
+          <option value="3">أوافق بشدة</option>
+          <option value="2">أوافق</option>
+          <option value="1">أختلف</option>
+          <option value="0">أختلف بشدة</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>كيف تتعامل مع المخاطر في استراتيجيتك ؟</p>
+        <select name="q7">
+          <option value="3">أتجنب المخاطر في الغالب</option>
+          <option value="2">أتخذ مخاطر محسوبة.</option>
+          <option value="1">غالبًا ما أتخذ مخاطر عالية للحصول على مكافآت عالية</option>
+          <option value="0">لا أفكر كثيرًا في المخاطر.</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>كيف تشعر في يوم سوق متقلب؟</p>
+        <select name="q8">
+          <option value="3">متوتر جدًا</option>
+          <option value="2">متوتر إلى حد ما</option>
+          <option value="1">متحمس قليلًا</option>
+          <option value="0">متحمس جدًا</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>مدى صبرك في انتظار وصول تداولاتك إلى أهداف الربح؟</p>
+        <select name="q9">
+          <option value="3">عديم الصبر جدًا</option>
+          <option value="2">عديم الصبر إلى حد ما</option>
+          <option value="1">صبور</option>
+          <option value="0">صبور جدًا</option>
+        </select>
+      </div>
+      <div class="question">
+        <p>هل تركز أكثر على المكاسب قصيرة الأجل بدلاً من النجاح التجاري طويل الأجل؟</p>
+        <select name="q10">
+          <option value="3">دائمًا</option>
+          <option value="2">غالبًا</option>
+          <option value="1">أحيانًا</option>
+          <option value="0">أبدًا</option>
+        </select>
+      </div>
+       
+
+    
+    <button type="button" onclick="calculateTraderType()">Submit</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
